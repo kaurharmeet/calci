@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Javascript Calculator</title>
+
+
+</head>
+<body>
+
+<div  class="input">
+<input type="text" id="first" placeholder=number>
+</input>
+<input type="text" id="second" placeholder=number>
+</input>
+
+</div>
+
+<button onclick="add()">add</button>
+<button onclick="subtract()">subtract</button>
+<button onclick="multiply()">multiply</button>
+<button onclick="divide()">divide</button>
+
+<p id ="answer"></p>
+<script type="text/javascript">
+var a,b,c;
+function add()
+{
+
+ a=parseInt(document.getElementById("first").value);
+ b=parseInt(document.getElementById("second").value);
+  c=a+b;
+document.getElementById("answer").innerHTML=c;
+}
+var a,b,c;
+function subtract()
+{
+
+ a=parseInt(document.getElementById("first").value);
+ b=parseInt(document.getElementById("second").value);
+  c=a-b;
+document.getElementById("answer").innerHTML=c;
+}
+var a,b,c;
+function multiply()
+{
+
+ a=parseInt(document.getElementById("first").value);
+ b=parseInt(document.getElementById("second").value);
+  c=a*b;
+document.getElementById("answer").innerHTML=c;
+}
+var a,b,c;
+function divide()
+{
+
+ a=parseInt(document.getElementById("first").value);
+ b=parseInt(document.getElementById("second").value);
+  c=a/b;
+document.getElementById("answer").innerHTML=c;
+}
+
+</script>
+
+</body>
+</html>
